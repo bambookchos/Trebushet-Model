@@ -17,14 +17,18 @@ SOURCES += main.cpp\
     paintwidget.cpp \
     model.cpp \
     ground.cpp \
-    matrix.cpp
+    matrix.cpp \
+    bullet.cpp \
+    trebushet.cpp
 
 HEADERS  += mainwindow.h \
     paintwidget.h \
     model.h \
     face.h \
     ground.h \
-    matrix.h
+    matrix.h \
+    bullet.h \
+    trebushet.h
 
 FORMS    += mainwindow.ui
 

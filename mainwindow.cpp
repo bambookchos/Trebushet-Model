@@ -17,16 +17,10 @@ MainWindow::MainWindow(QWidget *parent) :
 
     myPicture = new MyGraphicView();
     /* и добавляем его на слой */
+
     ui->gridLayout->addWidget(myPicture);    // instead, you could use the UI Designer to "Promote" a widget to a specific type.
 
-    ui->horizontalSlider->setMaximum(100);
-    ui->horizontalSlider->setMinimum(1);
 
-    ui->horizontalSlider_2->setMaximum(10);
-    ui->horizontalSlider_2->setMinimum(-10);
-
-    ui->horizontalSlider_3->setMaximum(10);
-    ui->horizontalSlider_3->setMinimum(-10);
 
 
     //    for(int i = 1; i< n; i++)
@@ -126,20 +120,6 @@ void MainWindow::on_pushButton_3_clicked()
     myPicture->mod[2].rotate_z = ui->rotate_z_trebushet->text().toDouble();
 }
 
-void MainWindow::on_horizontalSlider_valueChanged(int value)
-{
-    myPicture->camera_z =value;
-}
-
-void MainWindow::on_horizontalSlider_2_valueChanged(int value)
-{
-    myPicture->camera_x =value;
-}
-
-void MainWindow::on_horizontalSlider_3_valueChanged(int value)
-{
-    myPicture->camera_y =value;
-}
 
 void MainWindow::on_pushButton_4_clicked()
 {
@@ -154,14 +134,17 @@ void MainWindow::keyPressEvent(QKeyEvent *e)
 
         QKeyEvent* key = static_cast<QKeyEvent*>(e);
 
-        for (int i = 0; i<3; i++) {
+        for (int i = 0; i<4; i++) {
             if (i == 0 && ! myPicture->checked_ground){
                 continue;
             }
-            if (i == 1 && !myPicture->checked_barel){
+            if (i == 3 && !myPicture->checked_barel){
                 continue;
             }
             if (i == 2 && !myPicture->checked_trebushet){
+                continue;
+            }
+            if (i == 1 && !myPicture->checked_trebushet){
                 continue;
             }
             switch (key->key()) {
@@ -214,12 +197,12 @@ void MainWindow::keyPressEvent(QKeyEvent *e)
         ui->dx_trebushet->setText(QString::number(myPicture->mod[2].dx));
         ui->dy_trebushet->setText(QString::number(myPicture->mod[2].dy));
         ui->dz_trebushet->setText(QString::number(myPicture->mod[2].dz));
-        ui->dx_barrel->setText(QString::number(myPicture->mod[1].dx));
-        ui->dy_barrel->setText(QString::number(myPicture->mod[1].dy));
-        ui->dz_barrel->setText(QString::number(myPicture->mod[1].dz));
-        ui->rotate_x_barrel->setText(QString::number(myPicture->mod[1].rotate_x));
-        ui->rotate_y_barrel->setText(QString::number(myPicture->mod[1].rotate_y));
-        ui->rotate_z_barrel->setText(QString::number(myPicture->mod[1].rotate_z));
+        ui->dx_barrel->setText(QString::number(myPicture->mod[3].dx));
+        ui->dy_barrel->setText(QString::number(myPicture->mod[3].dy));
+        ui->dz_barrel->setText(QString::number(myPicture->mod[3].dz));
+        ui->rotate_x_barrel->setText(QString::number(myPicture->mod[3].rotate_x));
+        ui->rotate_y_barrel->setText(QString::number(myPicture->mod[3].rotate_y));
+        ui->rotate_z_barrel->setText(QString::number(myPicture->mod[3].rotate_z));
         ui->rotate_x_ground->setText(QString::number(myPicture->mod[0].rotate_x));
         ui->rotate_y_ground->setText(QString::number(myPicture->mod[0].rotate_y));
         ui->rotate_z_ground->setText(QString::number(myPicture->mod[0].rotate_z));
@@ -227,4 +210,17 @@ void MainWindow::keyPressEvent(QKeyEvent *e)
         ui->rotate_y_trebushet->setText(QString::number(myPicture->mod[2].rotate_y));
         ui->rotate_z_trebushet->setText(QString::number(myPicture->mod[2].rotate_z));
     }
+}
+
+void MainWindow::on_pushButton_5_clicked()
+{
+    myPicture->barrel_speed = true;
+}
+
+void MainWindow::on_pushButton_6_clicked()
+{
+    myPicture->camera_z =ui->lineEdit->text().toDouble();
+    myPicture->camera_x =ui->lineEdit_2->text().toDouble();
+    myPicture->camera_y =ui->lineEdit_3->text().toDouble();
+
 }

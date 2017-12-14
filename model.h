@@ -20,10 +20,11 @@ public:
     double scale_x;
     double scale_y;
     double scale_z;
-    QVector3D *v_array;
+    QVector3D *v_array, *vn_array;
     Face *f_array;
     int num_of_v;
     int num_of_f;
+    int num_of_vn;
 
     int rotate_x;
     int rotate_y;

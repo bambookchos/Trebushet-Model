@@ -1,6 +1,5 @@
 #ifndef FACE_H
 #define FACE_H
-
 struct Face
 {
     int point_num[3];

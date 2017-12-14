@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1800</width>
-    <height>1000</height>
+    <width>1129</width>
+    <height>637</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,21 +19,21 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>961</width>
-      <height>861</height>
+      <width>561</width>
+      <height>561</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
      <property name="sizeConstraint">
-      <enum>QLayout::SetDefaultConstraint</enum>
+      <enum>QLayout::SetMaximumSize</enum>
      </property>
     </layout>
    </widget>
    <widget class="QCheckBox" name="checkBox">
     <property name="geometry">
      <rect>
-      <x>1110</x>
-      <y>60</y>
+      <x>750</x>
+      <y>10</y>
       <width>87</width>
       <height>20</height>
      </rect>
@@ -45,8 +45,8 @@
    <widget class="QCheckBox" name="checkBox_2">
     <property name="geometry">
      <rect>
-      <x>1240</x>
-      <y>60</y>
+      <x>880</x>
+      <y>10</y>
       <width>87</width>
       <height>20</height>
      </rect>
@@ -58,8 +58,8 @@
    <widget class="QCheckBox" name="checkBox_3">
     <property name="geometry">
      <rect>
-      <x>1370</x>
-      <y>60</y>
+      <x>1010</x>
+      <y>10</y>
       <width>87</width>
       <height>20</height>
      </rect>
@@ -71,8 +71,8 @@
    <widget class="QLineEdit" name="scale_ground">
     <property name="geometry">
      <rect>
-      <x>1100</x>
-      <y>90</y>
+      <x>740</x>
+      <y>40</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -81,8 +81,8 @@
    <widget class="QLineEdit" name="scale_barrel">
     <property name="geometry">
      <rect>
-      <x>1230</x>
-      <y>90</y>
+      <x>870</x>
+      <y>40</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -91,8 +91,8 @@
    <widget class="QLineEdit" name="scale_trebushet">
     <property name="geometry">
      <rect>
-      <x>1360</x>
-      <y>90</y>
+      <x>1000</x>
+      <y>40</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -101,8 +101,8 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>1100</x>
-      <y>310</y>
+      <x>740</x>
+      <y>250</y>
       <width>113</width>
       <height>32</height>
      </rect>
@@ -114,8 +114,8 @@
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>1230</x>
-      <y>310</y>
+      <x>870</x>
+      <y>250</y>
       <width>113</width>
       <height>32</height>
      </rect>
@@ -127,8 +127,8 @@
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>1360</x>
-      <y>310</y>
+      <x>1000</x>
+      <y>250</y>
       <width>113</width>
       <height>32</height>
      </rect>
@@ -137,24 +137,11 @@
      <string>Apply</string>
     </property>
    </widget>
-   <widget class="QSlider" name="horizontalSlider">
-    <property name="geometry">
-     <rect>
-      <x>1010</x>
-      <y>550</y>
-      <width>160</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>1030</x>
-      <y>530</y>
+      <x>720</x>
+      <y>360</y>
       <width>60</width>
       <height>16</height>
      </rect>
@@ -162,38 +149,15 @@
     <property name="text">
      <string>Camera Z</string>
     </property>
-   </widget>
-   <widget class="QSlider" name="horizontalSlider_2">
-    <property name="geometry">
-     <rect>
-      <x>1010</x>
-      <y>620</y>
-      <width>160</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QSlider" name="horizontalSlider_3">
-    <property name="geometry">
-     <rect>
-      <x>1010</x>
-      <y>680</y>
-      <width>160</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>1030</x>
-      <y>590</y>
+      <x>720</x>
+      <y>330</y>
       <width>60</width>
       <height>16</height>
      </rect>
@@ -201,12 +165,15 @@
     <property name="text">
      <string>Camera X</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>1030</x>
-      <y>650</y>
+      <x>720</x>
+      <y>300</y>
       <width>60</width>
       <height>16</height>
      </rect>
@@ -214,12 +181,15 @@
     <property name="text">
      <string>Camera Y</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
    </widget>
    <widget class="QLineEdit" name="dx_ground">
     <property name="geometry">
      <rect>
-      <x>1100</x>
-      <y>120</y>
+      <x>740</x>
+      <y>70</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -228,8 +198,8 @@
    <widget class="QLineEdit" name="dy_ground">
     <property name="geometry">
      <rect>
-      <x>1100</x>
-      <y>150</y>
+      <x>740</x>
+      <y>100</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -238,8 +208,8 @@
    <widget class="QLineEdit" name="dz_ground">
     <property name="geometry">
      <rect>
-      <x>1100</x>
-      <y>180</y>
+      <x>740</x>
+      <y>130</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -248,8 +218,8 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>1030</x>
-      <y>90</y>
+      <x>670</x>
+      <y>40</y>
       <width>60</width>
       <height>16</height>
      </rect>
@@ -257,12 +227,15 @@
     <property name="text">
      <string>Scale</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
    </widget>
    <widget class="QLineEdit" name="dx_barrel">
     <property name="geometry">
      <rect>
-      <x>1230</x>
-      <y>120</y>
+      <x>870</x>
+      <y>70</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -271,8 +244,8 @@
    <widget class="QLineEdit" name="dy_barrel">
     <property name="geometry">
      <rect>
-      <x>1230</x>
-      <y>150</y>
+      <x>870</x>
+      <y>100</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -281,8 +254,8 @@
    <widget class="QLineEdit" name="dz_barrel">
     <property name="geometry">
      <rect>
-      <x>1230</x>
-      <y>180</y>
+      <x>870</x>
+      <y>130</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -291,8 +264,8 @@
    <widget class="QLineEdit" name="dx_trebushet">
     <property name="geometry">
      <rect>
-      <x>1360</x>
-      <y>120</y>
+      <x>1000</x>
+      <y>70</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -301,8 +274,8 @@
    <widget class="QLineEdit" name="dy_trebushet">
     <property name="geometry">
      <rect>
-      <x>1360</x>
-      <y>150</y>
+      <x>1000</x>
+      <y>100</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -311,8 +284,8 @@
    <widget class="QLineEdit" name="dz_trebushet">
     <property name="geometry">
      <rect>
-      <x>1360</x>
-      <y>180</y>
+      <x>1000</x>
+      <y>130</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -321,8 +294,8 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>1010</x>
-      <y>60</y>
+      <x>670</x>
+      <y>10</y>
       <width>60</width>
       <height>16</height>
      </rect>
@@ -330,12 +303,15 @@
     <property name="text">
      <string>Moveble</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
    </widget>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>1040</x>
-      <y>120</y>
+      <x>670</x>
+      <y>70</y>
       <width>60</width>
       <height>16</height>
      </rect>
@@ -343,12 +319,15 @@
     <property name="text">
      <string>Dx</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
    </widget>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>1040</x>
-      <y>150</y>
+      <x>670</x>
+      <y>100</y>
       <width>60</width>
       <height>16</height>
      </rect>
@@ -356,12 +335,15 @@
     <property name="text">
      <string>Dy</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
    </widget>
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>1040</x>
-      <y>180</y>
+      <x>670</x>
+      <y>130</y>
       <width>60</width>
       <height>16</height>
      </rect>
@@ -369,12 +351,15 @@
     <property name="text">
      <string>Dz</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
    </widget>
    <widget class="QLineEdit" name="rotate_x_ground">
     <property name="geometry">
      <rect>
-      <x>1100</x>
-      <y>210</y>
+      <x>740</x>
+      <y>160</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -383,8 +368,8 @@
    <widget class="QLineEdit" name="rotate_z_barrel">
     <property name="geometry">
      <rect>
-      <x>1230</x>
-      <y>270</y>
+      <x>870</x>
+      <y>220</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -393,8 +378,8 @@
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>1040</x>
-      <y>240</y>
+      <x>670</x>
+      <y>190</y>
       <width>60</width>
       <height>16</height>
      </rect>
@@ -402,12 +387,15 @@
     <property name="text">
      <string>Rotate Y</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
    </widget>
    <widget class="QLineEdit" name="rotate_x_barrel">
     <property name="geometry">
      <rect>
-      <x>1230</x>
-      <y>210</y>
+      <x>870</x>
+      <y>160</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -416,8 +404,8 @@
    <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
-      <x>1040</x>
-      <y>210</y>
+      <x>670</x>
+      <y>160</y>
       <width>60</width>
       <height>16</height>
      </rect>
@@ -425,12 +413,15 @@
     <property name="text">
      <string>Rotate X</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
    </widget>
    <widget class="QLineEdit" name="rotate_x_trebushet">
     <property name="geometry">
      <rect>
-      <x>1360</x>
-      <y>210</y>
+      <x>1000</x>
+      <y>160</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -439,8 +430,8 @@
    <widget class="QLineEdit" name="rotate_y_barrel">
     <property name="geometry">
      <rect>
-      <x>1230</x>
-      <y>240</y>
+      <x>870</x>
+      <y>190</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -449,8 +440,8 @@
    <widget class="QLineEdit" name="rotate_y_ground">
     <property name="geometry">
      <rect>
-      <x>1100</x>
-      <y>240</y>
+      <x>740</x>
+      <y>190</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -459,8 +450,8 @@
    <widget class="QLineEdit" name="rotate_z_trebushet">
     <property name="geometry">
      <rect>
-      <x>1360</x>
-      <y>270</y>
+      <x>1000</x>
+      <y>220</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -469,8 +460,8 @@
    <widget class="QLineEdit" name="rotate_z_ground">
     <property name="geometry">
      <rect>
-      <x>1100</x>
-      <y>270</y>
+      <x>740</x>
+      <y>220</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -479,8 +470,8 @@
    <widget class="QLineEdit" name="rotate_y_trebushet">
     <property name="geometry">
      <rect>
-      <x>1360</x>
-      <y>240</y>
+      <x>1000</x>
+      <y>190</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -489,8 +480,8 @@
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>1040</x>
-      <y>270</y>
+      <x>670</x>
+      <y>220</y>
       <width>60</width>
       <height>16</height>
      </rect>
@@ -498,12 +489,15 @@
     <property name="text">
      <string>Rotate Z</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
    </widget>
    <widget class="QLineEdit" name="x_target">
     <property name="geometry">
      <rect>
-      <x>1240</x>
-      <y>560</y>
+      <x>960</x>
+      <y>300</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -512,34 +506,40 @@
    <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
-      <x>1220</x>
-      <y>590</y>
+      <x>890</x>
+      <y>330</y>
       <width>60</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>Y</string>
+     <string>Eye Y</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="labd">
     <property name="geometry">
      <rect>
-      <x>1220</x>
-      <y>560</y>
+      <x>890</x>
+      <y>300</y>
       <width>60</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>X</string>
+     <string>Eye X</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
    <widget class="QLineEdit" name="y_target">
     <property name="geometry">
      <rect>
-      <x>1240</x>
-      <y>590</y>
+      <x>960</x>
+      <y>330</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -548,8 +548,8 @@
    <widget class="QLineEdit" name="z_target">
     <property name="geometry">
      <rect>
-      <x>1240</x>
-      <y>620</y>
+      <x>960</x>
+      <y>360</y>
       <width>113</width>
       <height>21</height>
      </rect>
@@ -558,34 +558,80 @@
    <widget class="QLabel" name="lab">
     <property name="geometry">
      <rect>
-      <x>1220</x>
-      <y>620</y>
+      <x>890</x>
+      <y>360</y>
       <width>60</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>Z</string>
+     <string>Eye Z</string>
     </property>
-   </widget>
-   <widget class="QLabel" name="label_15">
-    <property name="geometry">
-     <rect>
-      <x>1260</x>
-      <y>530</y>
-      <width>81</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Eye Target</string>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
      <rect>
-      <x>1240</x>
-      <y>650</y>
+      <x>960</x>
+      <y>390</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Apply</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>430</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>FIRE!!!!</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>360</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>330</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>300</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>390</y>
       <width>113</width>
       <height>32</height>
      </rect>
@@ -601,7 +647,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1800</width>
+     <width>1129</width>
      <height>22</height>
     </rect>
    </property>

@@ -13,7 +13,7 @@
 
 #include "model.h"
 #include "matrix.h"
-
+#include "bullet.h"
 
 // Расширяем класс QGraphicsView
 class MyGraphicView : public QGraphicsView
@@ -27,11 +27,12 @@ public:
     bool checked_barel;
 
     Model *mod;
-    int camera_z;
-    int camera_x;
-    int camera_y;
+    double camera_z;
+    double camera_x;
+    double camera_y;
     QVector3D target;
-
+    bool barrel_speed;
+    bool second_frame;
 
 signals:
 
@@ -49,10 +50,28 @@ private:
     QPixmap m_nPTargetPixmap;
 
     int *zbuffer;
-    int rotate_x,rotate_y,rotate_z;
-    float dx,dy,dz;
-    void deleteItemsFromGroup();
+    bullet *barrel;
 
+    void deleteItemsFromGroup();
+    bool trebushet_rotate;
+    //////////VARS FOR Z BUFFER
+    int p0[3];
+    int p1[3];
+    int p2[3];
+    int A[3];
+    int B[3];
+    int P[3];
+
+    /////VARS FOR FACE DRAW
+    bool second_half;
+    int segment_height;
+    float alpha;
+    float beta;
+    float phi;
+    int idx;
+    int total_height;
+    uint face_color;
+    double trebushet_angel;
 
 };
 
