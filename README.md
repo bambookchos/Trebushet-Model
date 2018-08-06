@@ -1,2 +1,2 @@
-#Trebuset model
-#BMSTU Computer Graphic course work
+*Trebuset model*
+BMSTU Computer Graphic course work
